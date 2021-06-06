@@ -12,6 +12,11 @@ div {
   padding: 0px;
   margin: 0px;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .logo {
   height: 58px;
 }
@@ -29,6 +34,19 @@ div {
   .HeaderRight {
     @include flex(row, flex-end, center);
     @include pr;
+  }
+  .MainNav {
+    font-size: 20px;
+    ul {
+      list-style: none;
+      @include flex(row, flex-start, center);
+      li {
+        font-weight: 500;
+      }
+      li:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
   }
 }
 
