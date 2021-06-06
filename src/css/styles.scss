@@ -1,0 +1,51 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+@import "colors.scss";
+@import "mixins.scss";
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  color: $black;
+}
+div {
+  padding: 0px;
+  margin: 0px;
+}
+.logo {
+  height: 58px;
+}
+
+.HeaderWrap {
+  min-height: 60px;
+  border-bottom: 1px solid $border;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .HeaderLeft {
+    @include flex(row, flex-start, center);
+    @include pl;
+  }
+  .HeaderRight {
+    @include flex(row, flex-end, center);
+    @include pr;
+  }
+}
+
+.ContentWrap {
+  @include pl;
+  @include pr;
+  min-height: 600px;
+}
+.FooterWrap {
+  min-height: 80px;
+  background-color: $grey;
+  color: $white;
+  @include flex(column, center, center);
+  .FooterMain {
+    font-size: 18px;
+  }
+  .FooterSub {
+    font-size: 12px;
+  }
+}
