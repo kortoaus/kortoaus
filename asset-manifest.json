@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.79126db8.chunk.css",
-    "main.js": "/static/js/main.0968db42.chunk.js",
-    "main.js.map": "/static/js/main.0968db42.chunk.js.map",
+    "main.css": "/static/css/main.170fdb80.chunk.css",
+    "main.js": "/static/js/main.8420ffdd.chunk.js",
+    "main.js.map": "/static/js/main.8420ffdd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.84a4ff94.js",
     "runtime-main.js.map": "/static/js/runtime-main.84a4ff94.js.map",
-    "static/js/2.ce65bb65.chunk.js": "/static/js/2.ce65bb65.chunk.js",
-    "static/js/2.ce65bb65.chunk.js.map": "/static/js/2.ce65bb65.chunk.js.map",
+    "static/js/2.4dc8d5ec.chunk.js": "/static/js/2.4dc8d5ec.chunk.js",
+    "static/js/2.4dc8d5ec.chunk.js.map": "/static/js/2.4dc8d5ec.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.79126db8.chunk.css.map": "/static/css/main.79126db8.chunk.css.map",
-    "static/js/2.ce65bb65.chunk.js.LICENSE.txt": "/static/js/2.ce65bb65.chunk.js.LICENSE.txt",
+    "static/css/main.170fdb80.chunk.css.map": "/static/css/main.170fdb80.chunk.css.map",
+    "static/js/2.4dc8d5ec.chunk.js.LICENSE.txt": "/static/js/2.4dc8d5ec.chunk.js.LICENSE.txt",
     "static/media/ae_black.11a870a4.svg": "/static/media/ae_black.11a870a4.svg",
     "static/media/ae_ot.695c50fc.svg": "/static/media/ae_ot.695c50fc.svg",
     "static/media/ae_tt.282d0b44.svg": "/static/media/ae_tt.282d0b44.svg",
@@ -22,10 +22,12 @@
     "static/media/django_ot.ee85ece3.svg": "/static/media/django_ot.ee85ece3.svg",
     "static/media/django_tt.dc9621bf.svg": "/static/media/django_tt.dc9621bf.svg",
     "static/media/django_white.9a5467eb.svg": "/static/media/django_white.9a5467eb.svg",
+    "static/media/icedlongblack.56201709.svg": "/static/media/icedlongblack.56201709.svg",
     "static/media/logo.6cd3aaf6.svg": "/static/media/logo.6cd3aaf6.svg",
+    "static/media/logo_white.14775bae.svg": "/static/media/logo_white.14775bae.svg",
     "static/media/pr_black.d2df9db6.svg": "/static/media/pr_black.d2df9db6.svg",
-    "static/media/pr_ot.2e3ea56a.svg": "/static/media/pr_ot.2e3ea56a.svg",
-    "static/media/pr_tt.5291c912.svg": "/static/media/pr_tt.5291c912.svg",
+    "static/media/pr_ot.aaceafef.svg": "/static/media/pr_ot.aaceafef.svg",
+    "static/media/pr_tt.ded307cf.svg": "/static/media/pr_tt.ded307cf.svg",
     "static/media/pr_white.59a013a4.svg": "/static/media/pr_white.59a013a4.svg",
     "static/media/ps_black.8733e8ef.svg": "/static/media/ps_black.8733e8ef.svg",
     "static/media/ps_ot.b2e9ba58.svg": "/static/media/ps_ot.b2e9ba58.svg",
@@ -43,15 +45,15 @@
     "static/media/wordpress_ot.cbc0b5dd.svg": "/static/media/wordpress_ot.cbc0b5dd.svg",
     "static/media/wordpress_tt.cdd74e62.svg": "/static/media/wordpress_tt.cdd74e62.svg",
     "static/media/wordpress_white.5cb2e250.svg": "/static/media/wordpress_white.5cb2e250.svg",
-    "static/media/youtube_black.85cee61d.svg": "/static/media/youtube_black.85cee61d.svg",
-    "static/media/youtube_ot.dce62d83.svg": "/static/media/youtube_ot.dce62d83.svg",
-    "static/media/youtube_tt.5aa2bc9d.svg": "/static/media/youtube_tt.5aa2bc9d.svg",
-    "static/media/youtube_white.03b31a79.svg": "/static/media/youtube_white.03b31a79.svg"
+    "static/media/youtube_black.d57c70e8.svg": "/static/media/youtube_black.d57c70e8.svg",
+    "static/media/youtube_ot.25d942a6.svg": "/static/media/youtube_ot.25d942a6.svg",
+    "static/media/youtube_tt.affb5d4a.svg": "/static/media/youtube_tt.affb5d4a.svg",
+    "static/media/youtube_white.5029fdf2.svg": "/static/media/youtube_white.5029fdf2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.84a4ff94.js",
-    "static/js/2.ce65bb65.chunk.js",
-    "static/css/main.79126db8.chunk.css",
-    "static/js/main.0968db42.chunk.js"
+    "static/js/2.4dc8d5ec.chunk.js",
+    "static/css/main.170fdb80.chunk.css",
+    "static/js/main.8420ffdd.chunk.js"
   ]
 }
