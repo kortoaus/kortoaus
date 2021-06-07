@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
 .svg25px {
   width: 25px;
 }
@@ -88,7 +88,7 @@ a {
 }
 
 .HeaderWrap .MainNav {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .HeaderWrap .MainNav ul {
@@ -119,6 +119,24 @@ a {
 .ContentWrap {
   padding-left: 15px;
   padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.CotentInnerWrap {
+  width: 100%;
+  max-width: 1080px;
 }
 
 .FooterWrap {
