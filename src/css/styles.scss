@@ -3,6 +3,7 @@
 @import "mixins.scss";
 @import "svg_size.scss";
 
+// Default Settings
 body {
   padding: 0px;
   margin: 0px;
@@ -18,55 +19,237 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 38px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  @media (max-width: 425px) {
+    font-size: 28px;
+  }
+}
+
+.MobileReplace {
+  display: none;
+  @media (max-width: 425px) {
+    display: block;
+  }
+}
 .logo {
   height: 58px;
 }
 
+// Header
 .HeaderWrap {
-  min-height: 60px;
   border-bottom: 1px solid $border;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @include flex(row, center, center);
+  .HeaderInnerWrap {
+    width: 100%;
+    max-width: 1080px;
+    min-height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-  .HeaderLeft {
-    @include flex(row, flex-start, center);
-    @include pl;
-  }
-  .HeaderRight {
-    @include flex(row, flex-end, center);
-    @include pr;
-  }
-  .MainNav {
-    font-size: 16px;
-    ul {
-      list-style: none;
+    .HeaderLeft {
       @include flex(row, flex-start, center);
-      li {
-        font-weight: 500;
+      @include pl;
+    }
+    .HeaderRight {
+      @include flex(row, flex-end, center);
+      @include pr;
+    }
+    .MainNav {
+      font-size: 16px;
+      ul {
+        list-style: none;
+        @include flex(row, flex-start, center);
+        li {
+          font-weight: 500;
+        }
+        li:not(:last-child) {
+          margin-right: 10px;
+        }
       }
-      li:not(:last-child) {
-        margin-right: 10px;
+    }
+    @media (max-width: 768px) {
+      .MainNav {
+        display: none;
       }
     }
   }
 }
 
+// Hero
+.HeroWrap {
+  @include flex(column, center, center);
+  border-bottom: 1px solid $border;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $black;
+  color: $white;
+  @media (max-width: 425px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.HeroTitle {
+  h1 {
+    margin-top: 15px;
+    text-align: center;
+    @media (max-width: 425px) {
+      font-size: 24px;
+    }
+  }
+}
+.HeroContext {
+}
+.HeroInnerWrap {
+  @include flex(column, center, center);
+  width: 100%;
+  max-width: 1080px;
+}
+.HeroLogoWrap {
+  width: 100%;
+  @include flex(row, center, center);
+}
+.HeroLogo {
+  height: 200px;
+  @media (max-width: 425px) {
+    height: 80px;
+  }
+}
+.HeroLogo:not(:last-child) {
+  margin-right: 50px;
+  @media (max-width: 425px) {
+    margin-right: 10px;
+  }
+}
+
+// Contents
 .ContentWrap {
   @include pl;
   @include pr;
   @include flex(row, center, center);
+  @include mp0;
 }
 .CotentInnerWrap {
   width: 100%;
   max-width: 1080px;
 }
+
+// Contents > Components
+.ServiceWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0px;
+  @media (max-width: 768px) {
+    display: block;
+    padding: 0px;
+  }
+}
+.ILBWrap {
+  color: $black;
+  background-color: $border;
+  .HeroVideo {
+    margin-bottom: 10px;
+    iframe {
+      width: 720px;
+      height: 480px;
+    }
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
+  @media (max-width: 425px) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+.SectionTwoColumn {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 300px;
+  .TwoIcons {
+    @include flex(row, center, center);
+    img:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  .TwoContext {
+    padding: 10px;
+    @include flex(column, center, flex-start);
+  }
+  @media (max-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+    .TwoIcons {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .TwoContext {
+      align-items: center;
+    }
+  }
+}
+
+.SectionOneColumn {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  .OneIcons {
+    @include flex(row, center, center);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    img:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  .OneContext {
+    padding: 10px;
+    @include flex(column, center, center);
+    h1 {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    div {
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+    .OneIcons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      img {
+        width: 100%;
+      }
+    }
+    .OneContext {
+      align-items: center;
+      div {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Footer
 .FooterWrap {
   @include flex(column, center, center);
   min-height: 80px;
-  background-color: $grey;
-  color: $white;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-top: 1px solid $border;
+
   .FooterMain {
     font-weight: 500;
     font-size: 18px;
@@ -80,18 +263,11 @@ a {
       margin-right: 5px;
     }
   }
-}
-
-@media screen and (max-width: 768px) {
-  .HeaderWrap {
-    grid-template-columns: 1fr;
-    .HeaderLeft {
-    }
-    .HeaderRight {
-      display: none;
-    }
-  }
-  .MainNav {
-    display: none;
+  .FooterContact {
+    background-color: $black;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: $white;
   }
 }

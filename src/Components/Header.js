@@ -4,10 +4,11 @@ import logo from "./svg/logo.svg";
 const Header = () => {
   return (
     <div className="HeaderWrap">
-      <div className="HeaderLeft">
-        <img src={logo} className="logo" alt="logo" />
-        <div className="MainNav">
-          <ul>
+      <div className="HeaderInnerWrap">
+        <div className="HeaderLeft">
+          <img src={logo} className="logo" alt="logo" />
+          <div className="MainNav">
+            {/* <ul>
             <li>
               <a href="/CUB">CUBEROLL</a>
             </li>
@@ -17,10 +18,11 @@ const Header = () => {
             <li>
               <a href="/ICE">ICED LONG BLACK</a>
             </li>
-          </ul>
+          </ul> */}
+          </div>
         </div>
+        <div className="HeaderRight">KORTOAUS PTY LTD</div>
       </div>
-      <div className="HeaderRight">KORTOAUS PTY LTD</div>
     </div>
   );
 };

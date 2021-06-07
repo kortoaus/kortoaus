@@ -1,0 +1,4 @@
+export const AppContext =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ipsum magna, viverra et est eget, consectetur cursus lorem. Nulla non sollicitudin tortor. Duis eu urna ac est aliquet pharetra. Donec mattis lorem in consectetur iaculis. Curabitur consequat tempor rhoncus. Proin a iaculis nibh. Fusce facilisis pellentesque tempus. Duis dolor quam, tempus quis viverra in, tincidunt id urna. Sed a condimentum augue, ac aliquet nibh. Nunc tincidunt enim purus, pellentesque pulvinar lectus malesuada ut. Nunc metus nulla, consequat in risus sed, blandit scelerisque mauris. Nunc ut nibh sem. Sed lacinia orci aliquet neque venenatis, quis feugiat ex ullamcorper. Ut at est tortor. Integer quis nisi rutrum, bibendum tortor id, consequat felis.";
+
+export const WebContext = "Create Something.";

@@ -1,5 +1,5 @@
 import React from "react";
-import Tools from "./ToolsIcon";
+// import Tools from "./ToolsIcon";
 
 const Footer = () => {
   const Year = new Date().getFullYear();
@@ -8,8 +8,9 @@ const Footer = () => {
     <div className="FooterWrap">
       <div className="FooterMain">CREATE SOMETHING</div>
       <div className="FooterSub">©{Year} KORTOAUS PTY LTD</div>
+      <div className="FooterContact">dev@kortoaus.com.au</div>
       <div className="FooterIconWrap">
-        <Tools color="white" size="svg30px" />
+        {/* <Tools color="ot" size="svg30px" /> */}
       </div>
     </div>
   );
