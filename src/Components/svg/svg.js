@@ -31,6 +31,10 @@ import wordpress_tt from "./wordpress_tt.svg";
 import wordpress_ot from "./wordpress_ot.svg";
 import wordpress_black from "./wordpress_black.svg";
 import wordpress_white from "./wordpress_white.svg";
+import woo_tt from "./woo_tt.svg";
+import woo_ot from "./woo_ot.svg";
+import woo_black from "./woo_black.svg";
+import woo_white from "./woo_white.svg";
 
 export const icons = {
   ae: {
@@ -80,6 +84,12 @@ export const icons = {
     tt: wordpress_tt,
     black: wordpress_black,
     white: wordpress_white,
+  },
+  woo: {
+    ot: woo_ot,
+    tt: woo_tt,
+    black: woo_black,
+    white: woo_white,
   },
 };
 

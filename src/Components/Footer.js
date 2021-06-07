@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="FooterMain">CREATE SOMETHING</div>
       <div className="FooterSub">©{Year} KORTOAUS PTY LTD</div>
       <div className="FooterIconWrap">
-        <Tools />
+        <Tools color="white" size="svg30px" />
       </div>
     </div>
   );

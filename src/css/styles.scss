@@ -54,7 +54,6 @@ a {
 .ContentWrap {
   @include pl;
   @include pr;
-  min-height: 600px;
 }
 .FooterWrap {
   @include flex(column, center, center);
