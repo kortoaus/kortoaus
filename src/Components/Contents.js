@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import Main from "../screens/Main/index";
 
 const Contents = ({ children }) => {
@@ -7,9 +7,9 @@ const Contents = ({ children }) => {
     <div className="ContentWrap">
       <div className="CotentInnerWrap">
         {children}
-        <BrowserRouter>
+        <HashRouter>
           <Route path="/" exact component={Main} />
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </div>
   );
