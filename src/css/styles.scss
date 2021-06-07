@@ -1,6 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
 @import "colors.scss";
 @import "mixins.scss";
+@import "svg_size.scss";
 
 body {
   padding: 0px;
@@ -56,14 +57,36 @@ a {
   min-height: 600px;
 }
 .FooterWrap {
+  @include flex(column, center, center);
   min-height: 80px;
   background-color: $grey;
   color: $white;
-  @include flex(column, center, center);
+  padding-top: 10px;
+  padding-bottom: 10px;
   .FooterMain {
     font-size: 18px;
   }
   .FooterSub {
     font-size: 12px;
+  }
+  .FooterIconWrap {
+    padding-top: 10px;
+    img:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HeaderWrap {
+    grid-template-columns: 1fr;
+    .HeaderLeft {
+    }
+    .HeaderRight {
+      display: none;
+    }
+  }
+  .MainNav {
+    display: none;
   }
 }

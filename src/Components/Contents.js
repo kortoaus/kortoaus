@@ -1,14 +1,8 @@
 import React from "react";
-import { Route } from "react-router";
-import { BrowserRouter } from "react-router-dom";
+import { SVGIcon } from "./svg/svg";
 
 const Contents = () => {
-  return (
-    <div className="ContentWrap">
-      asfd
-      <BrowserRouter></BrowserRouter>
-    </div>
-  );
+  return <div className="ContentWrap"></div>;
 };
 
 export default Contents;

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./svg/logo.svg";
 
 const Header = () => {
   return (
@@ -9,13 +9,13 @@ const Header = () => {
         <div className="MainNav">
           <ul>
             <li>
-              <a href="#">CUBEROLL</a>
+              <a href="/CUB">CUBEROLL</a>
             </li>
             <li>
-              <a href="#">KTD PORTAL</a>
+              <a href="/KTD">KTD PORTAL</a>
             </li>
             <li>
-              <a href="#">ICED LONG BLACK</a>
+              <a href="/ICE">ICED LONG BLACK</a>
             </li>
           </ul>
         </div>

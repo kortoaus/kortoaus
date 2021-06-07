@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="FooterWrap">
       <div className="FooterMain">CREATE SOMETHING</div>
       <div className="FooterSub">©{Year} KORTOAUS PTY LTD</div>
-      <div className="FooterIcons">
+      <div className="FooterIconWrap">
         <Tools />
       </div>
     </div>
