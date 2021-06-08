@@ -21,7 +21,7 @@ const Header = () => {
           </ul> */}
           </div>
         </div>
-        <div className="HeaderRight">KORTOAUS PTY LTD</div>
+        <div className="HeaderRight">KORTOAUS</div>
       </div>
     </div>
   );
