@@ -1,23 +1,8 @@
 import React from "react";
 import colors from "../../../colors";
 import { SVGIcon } from "../../../Components/svg/svg";
-// import { AppContext, WebContext } from "./context";
 import MainSection from "./MainSection";
-
-// export const EcommerceContent = () => {
-//   return (
-//     <MainSection className="SectionTwoColumn" bgcolor={colors.white}>
-//       <div className="TwoIcons">
-//         <SVGIcon icon="wordpress" color="black" size="svg100px" />
-//         <SVGIcon icon="woo" size="svg100px" />
-//       </div>
-//       <div className="TwoContext">
-//         <h1>Website</h1>
-//         {/* <div>{AppContext}</div> */}
-//       </div>
-//     </MainSection>
-//   );
-// };
+import CuberollSVG from "../../../Components/svg/cuberoll.svg";
 
 export const AppContent = () => {
   return (
@@ -27,10 +12,10 @@ export const AppContent = () => {
         <div>웹/네이티브 어플리케이션 제작</div>
       </div>
       <div className="OneIcons">
-        <SVGIcon icon="django" size="svg100px" />
-        <SVGIcon icon="react" size="svg100px" />
-        <SVGIcon icon="wordpress" size="svg100px" />
-        <SVGIcon icon="woo" size="svg100px" />
+        <SVGIcon icon="django" size="svg75px" />
+        <SVGIcon icon="react" size="svg75px" />
+        <SVGIcon icon="wordpress" size="svg75px" />
+        <SVGIcon icon="woo" size="svg75px" />
       </div>
     </MainSection>
   );
@@ -45,10 +30,36 @@ export const WebsiteContent = () => {
       </div>
       <div className="OneIcons">
         {/* <SVGIcon icon="youtube" size="svg100px" /> */}
-        <SVGIcon icon="ps" size="svg100px" />
-        <SVGIcon icon="ai" size="svg100px" />
-        <SVGIcon icon="pr" size="svg100px" />
-        <SVGIcon icon="ae" size="svg100px" />
+        <SVGIcon icon="ps" size="svg75px" />
+        <SVGIcon icon="ai" size="svg75px" />
+        <SVGIcon icon="pr" size="svg75px" />
+        <SVGIcon icon="ae" size="svg75px" />
+      </div>
+    </MainSection>
+  );
+};
+
+export const Cuberoll = () => {
+  return (
+    <MainSection className="SectionTwoColumn cuberoll" bgcolor={colors.white}>
+      <div className="TwoIcons">
+        <img src={CuberollSVG} alt="cuberoll" className="svg200px" />
+      </div>
+      <div className="TwoContext">
+        <h1>B2B Marketplace</h1>
+        <div>외식업 B2B 주문/배송 시스템(개발중)</div>
+
+        <ul class="cuberollUL">
+          <li>Vendor Web App</li>
+          <li>Vendor Native App(iOS/Android)</li>
+          <li>Customer Web App</li>
+          <li>Customer Native App(iOS/Android)</li>
+        </ul>
+
+        <div className="DevTools">
+          <SVGIcon icon="django" color="tt" size="svg50px" />
+          <SVGIcon icon="react" color="tt" size="svg50px" />
+        </div>
       </div>
     </MainSection>
   );

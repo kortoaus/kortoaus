@@ -11,6 +11,10 @@
   width: 50px;
 }
 
+.svg75px {
+  width: 75px;
+}
+
 .svg100px {
   width: 100px;
 }
@@ -214,7 +218,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ddd;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #212121;
@@ -362,18 +365,13 @@ h1 {
   }
 }
 
-.ILBWrap {
-  color: #212121;
-  background-color: #ddd;
-}
-
 .ILBWrap .HeroVideo {
   margin-bottom: 10px;
 }
 
 .ILBWrap .HeroVideo iframe {
-  width: 720px;
-  height: 480px;
+  width: 480px;
+  height: 270px;
 }
 
 @media (max-width: 425px) {
@@ -426,9 +424,9 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -436,8 +434,7 @@ h1 {
 
 @media (max-width: 768px) {
   .SectionTwoColumn {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 0px;
   }
 }
 
@@ -446,14 +443,107 @@ h1 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .SectionTwoColumn .TwoIcons {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
   .SectionTwoColumn .TwoContext {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.cuberoll {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .cuberoll {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cuberoll {
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cuberoll {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cuberoll {
+    padding-right: 5px;
+  }
+}
+
+.cuberoll .TwoIcons {
+  background-color: #212121;
+}
+
+@media (max-width: 425px) {
+  .cuberoll .TwoIcons {
+    opacity: 0.5;
+  }
+}
+
+.cuberoll .DevTools {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.cuberoll .DevTools img:not(:last-child) {
+  margin-right: 5px;
+}
+
+@media (max-width: 425px) {
+  .cuberoll .DevTools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.cuberoll .cuberollUL {
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+@media (max-width: 425px) {
+  .cuberoll .cuberollUL {
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    font-size: 14px;
+  }
+  .cuberoll .cuberollUL li {
+    margin-bottom: 5px;
   }
 }
 

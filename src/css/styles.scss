@@ -83,7 +83,7 @@ h1 {
 // Hero
 .HeroWrap {
   @include flex(column, center, center);
-  border-bottom: 1px solid $border;
+  // border-bottom: 1px solid $border;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: $black;
@@ -149,13 +149,11 @@ h1 {
   }
 }
 .ILBWrap {
-  color: $black;
-  background-color: $border;
   .HeroVideo {
     margin-bottom: 10px;
     iframe {
-      width: 720px;
-      height: 480px;
+      width: 480px;
+      height: 270px;
     }
     @media (max-width: 425px) {
       display: none;
@@ -178,20 +176,53 @@ h1 {
   }
   .TwoContext {
     padding: 10px;
-    @include flex(column, center, flex-start);
+    @include flex(column, flex-start, flex-start);
   }
   @media (max-width: 768px) {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 0px;
   }
   @media (max-width: 425px) {
     grid-template-columns: 1fr;
     .TwoIcons {
-      padding-top: 10px;
-      padding-bottom: 10px;
     }
     .TwoContext {
       align-items: center;
+    }
+  }
+}
+
+.cuberoll {
+  @include pl;
+  @include pr;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .TwoIcons {
+    background-color: $black;
+    @media (max-width: 425px) {
+      opacity: 0.5;
+    }
+  }
+  .DevTools {
+    width: 100%;
+    padding-top: 10px;
+    img:not(:last-child) {
+      margin-right: 5px;
+    }
+    @media (max-width: 425px) {
+      @include flex(row, center, center);
+    }
+  }
+  .cuberollUL {
+    padding-left: 20px;
+    font-size: 12px;
+    @media (max-width: 425px) {
+      padding: 0px;
+      @include flex(column, center, center);
+      list-style: none;
+      font-size: 14px;
+      li {
+        margin-bottom: 5px;
+      }
     }
   }
 }

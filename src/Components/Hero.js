@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="HeroTitle">
           <h1>Create Something</h1>
         </div>
-        <div className="HeroContext">CREATE READ UPDATE DELETE</div>
+        {/* <div className="HeroContext">CREATE READ UPDATE DELETE</div> */}
       </div>
     </div>
   );

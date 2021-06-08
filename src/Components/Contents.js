@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
+import { Cuberoll } from "../screens/Main/contents/Contents";
 import Main from "../screens/Main/index";
 import Hero from "./Hero";
 import ILB from "./ILB";
@@ -10,7 +11,6 @@ const Contents = ({ children }) => {
       <HashRouter>
         <Route path="/" exact>
           <Hero></Hero>
-          <ILB></ILB>
         </Route>
       </HashRouter>
       <div className="ContentWrap">
@@ -19,6 +19,16 @@ const Contents = ({ children }) => {
           <HashRouter>
             <Route path="/" exact>
               <Main></Main>
+            </Route>
+          </HashRouter>
+        </div>
+      </div>
+      <ILB></ILB>
+      <div className="ContentWrap">
+        <div className="CotentInnerWrap">
+          <HashRouter>
+            <Route path="/" exact>
+              <Cuberoll></Cuberoll>
             </Route>
           </HashRouter>
         </div>
