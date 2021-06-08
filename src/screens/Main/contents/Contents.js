@@ -49,7 +49,7 @@ export const Cuberoll = () => {
         <h1>B2B Marketplace</h1>
         <div>외식업 B2B 주문/배송 시스템(개발중)</div>
 
-        <ul class="cuberollUL">
+        <ul className="cuberollUL">
           <li>Vendor Web App</li>
           <li>Vendor Native App(iOS/Android)</li>
           <li>Customer Web App</li>
